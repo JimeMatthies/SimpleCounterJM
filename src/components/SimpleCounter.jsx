@@ -5,7 +5,7 @@ function SimpleCounter (counter){
     return (
         <div className="row">
             <div className="time container-sm d-flex justify-content-center col-12">
-                <div className="logo"><i class="fa-regular fa-clock"></i></div>
+                <div className="logo"><i className="fa-regular fa-clock"></i></div>
                 <div className="six">{counter.digitSix % 10}</div>
                 <div className="five">{counter.digitFive % 10}</div>
                 <div className="four">{counter.digitFour % 10}</div>
