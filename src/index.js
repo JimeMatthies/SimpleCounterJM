@@ -7,6 +7,23 @@ import './App.css';
 import * as data from './data/info';
 
 import { Main } from './Main';
-
 const root = ReactDOM.createRoot(document.querySelector('#root'));
-root.render(<Main {...data} />);
+
+let counter = 0;
+setInterval(function () {
+    const six = Math.floor(counter / 100000);
+    const five = Math.floor(counter / 10000);
+    const four = Math.floor(counter / 1000);
+    const three = Math.floor(counter / 100);
+    const two = Math.floor(counter / 10);
+    const one = Math.floor(counter / 1);
+    console.log(six, five, four, three, two, one)
+
+    /* ReactDOM.render(
+        <SimpleCounter digitOne={one} digitTwo={two} digitThree={three} digitFour={four} digitFive={five} digitSix={six} />,
+        document.querySelector('#time')
+        ); */
+    root.render(<Main {...data} one={one} two={two} three={three} four={four} five={five} six={six} />);
+
+    counter++;
+}, 1000)
