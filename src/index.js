@@ -19,10 +19,6 @@ setInterval(function () {
     const one = Math.floor(counter / 1);
     console.log(six, five, four, three, two, one)
 
-    /* ReactDOM.render(
-        <SimpleCounter digitOne={one} digitTwo={two} digitThree={three} digitFour={four} digitFive={five} digitSix={six} />,
-        document.querySelector('#time')
-        ); */
     root.render(<Main {...data} one={one} two={two} three={three} four={four} five={five} six={six} />);
 
     counter++;

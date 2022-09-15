@@ -17,9 +17,6 @@ function SimpleCounter (counter){
     );
 }
 
-
-
-
 SimpleCounter.propTypes = {
     digitOne: PropTypes.number,
     digitTwo: PropTypes.number,
